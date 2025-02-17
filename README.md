@@ -1,7 +1,11 @@
 # terraform-storage-account
 
 Este repositorio servirá de soporte a los posts en [Medium](https://medium.com/@jamieynonan) sobre Terraform e IaC.
-- [Terraform y Azure: Implementación de recursos en la nube de Microsoft](https://medium.com/@jamieynonan/terraform-y-azure-implementacion-de-recursos-en-la-nube-de-microsoft-27ea87c1049c)
+
+| Post | Branch |
+|------|--------|
+| [Terraform y Azure: Implementación de recursos en la nube de Microsoft](https://medium.com/@jamieynonan/terraform-y-azure-implementacion-de-recursos-en-la-nube-de-microsoft-27ea87c1049c) | feature/storage-account |
+| [Gestión del estado en Terraform: Remote state](https://medium.com/@jamieynonan/gestion-del-estado-en-terraform-remote-state-e9e98645c93e) | feature/remote-states |
 
 <!-- BEGIN_TF_DOCS -->
 ## Requirements
@@ -15,7 +19,7 @@ Este repositorio servirá de soporte a los posts en [Medium](https://medium.com/
 
 | Name | Version |
 |------|---------|
-| <a name="provider_azurerm"></a> [azurerm](#provider\_azurerm) | ~> 4.0 |
+| <a name="provider_azurerm"></a> [azurerm](#provider\_azurerm) | 4.19.0 |
 
 ## Modules
 

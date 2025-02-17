@@ -27,6 +27,21 @@ resource "azurerm_storage_account" "example" {
   https_traffic_only_enabled      = true
   min_tls_version                 = "TLS1_2"
   allow_nested_items_to_be_public = false
+
+  blob_properties {
+    versioning_enabled = true
+
+    delete_retention_policy {
+      days = 7
+    }
+    
+    container_delete_retention_policy {
+      days = 7
+    }
+
+    change_feed_enabled = true
+    change_feed_retention_in_days = 7
+  }
 }
 
 resource "azurerm_storage_container" "example" {

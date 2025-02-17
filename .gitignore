@@ -2,6 +2,7 @@
 *.tfstate
 *.tfstate.*
 crash.log
+*.plan
 
 # Terraform directories
 .terraform/
