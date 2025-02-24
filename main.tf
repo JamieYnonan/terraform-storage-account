@@ -13,12 +13,12 @@ provider "azurerm" {
 }
 
 resource "azurerm_resource_group" "example" {
-  name     = "rg-example-eastus2-001"
+  name     = local.rg_name
   location = "East US 2"
 }
 
 resource "azurerm_storage_account" "example" {
-  name                            = "stnexampleterraform001"
+  name                            = local.stn_name
   resource_group_name             = azurerm_resource_group.example.name
   location                        = azurerm_resource_group.example.location
   account_tier                    = "Standard"
@@ -32,15 +32,15 @@ resource "azurerm_storage_account" "example" {
     versioning_enabled = true
 
     delete_retention_policy {
-      days = 7
-    }
-    
-    container_delete_retention_policy {
-      days = 7
+      days = var.blob_delete_retention_policy_days
     }
 
-    change_feed_enabled = true
-    change_feed_retention_in_days = 7
+    container_delete_retention_policy {
+      days = var.blob_container_delete_retention_policy_days
+    }
+
+    change_feed_enabled           = true
+    change_feed_retention_in_days = var.blob_change_feed_retention_in_days
   }
 }
 
