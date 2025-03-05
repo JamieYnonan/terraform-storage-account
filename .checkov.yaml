@@ -1,0 +1,20 @@
+block-list-secret-scan: []
+branch: master
+custom-tool-name: Checkov
+download-external-modules: false
+evaluate-variables: true
+external-modules-download-path: .external_modules
+mask: []
+secrets-history-timeout: 12h
+secrets-scan-file-type: []
+summary-position: top
+file: tf.json
+repo-root-for-plan-enrichment: .
+deep-analysis: true
+skip-check:
+  - CKV_AZURE_206
+  - CKV_AZURE_59
+  - CKV_AZURE_33
+  - CKV2_AZURE_1
+  - CKV2_AZURE_21
+  - CKV2_AZURE_33

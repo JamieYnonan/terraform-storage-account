@@ -7,6 +7,7 @@ Este repositorio servirá de soporte a los posts en [Medium](https://medium.com/
 | [Terraform y Azure: Implementación de recursos en la nube de Microsoft](https://medium.com/@jamieynonan/terraform-y-azure-implementacion-de-recursos-en-la-nube-de-microsoft-27ea87c1049c) | feature/storage-account |
 | [Gestión del estado en Terraform: Remote state](https://medium.com/@jamieynonan/gestion-del-estado-en-terraform-remote-state-e9e98645c93e) | feature/remote-states |
 | [Terraform y testing: Pruebas con Terraform Test Framework](https://medium.com/@jamieynonan/terraform-y-testing-pruebas-con-terraform-test-framework-eb09eb235fb6) | feature/tests |
+| [Seguridad en Terraform con Checkov: Análisis Estático para IaC](https://medium.com/@jamieynonan/seguridad-en-terraform-con-checkov-analisis-estatico-para-iac-e9591988291f) | feature/checkov |
 
 <!-- BEGIN_TF_DOCS -->
 ## Requirements
