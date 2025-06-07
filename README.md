@@ -1,5 +1,9 @@
 # terraform-storage-account
 
+:warning: Se archivo el repositorio y queda solo como parte de la evolución al nuevo repositorio: https://github.com/JamieYnonan/terraform-azurerm-storage-account.
+
+---
+
 Este repositorio servirá de soporte a los posts en [Medium](https://medium.com/@jamieynonan) sobre Terraform e IaC.
 
 | Post | Branch |
